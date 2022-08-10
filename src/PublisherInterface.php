@@ -13,8 +13,9 @@ interface PublisherInterface
      * Publish a new message
      *
      * @param string $message
+     * @param array $messageProperties
      * @param string $routingKey
      * @return mixed
      */
-    public function publish(string $message, string $routingKey = '');
+    public function publish(string $message, array $messageProperties = [], string $routingKey = '');
 }
